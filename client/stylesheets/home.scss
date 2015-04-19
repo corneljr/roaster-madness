@@ -1,0 +1,81 @@
+.home-container {
+	position:fixed;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+
+	h1 {
+		font-size: 3rem !important;
+	}
+
+	h4 {
+		font-size: 1.5rem !important;
+	}
+
+	h1,h2,h4,span,a {
+		color:white !important;
+		text-shadow: 0.5px 0.5px #000;
+	}
+
+	.log-in-link {
+		position:absolute;
+		right:10px;
+		top:10px;
+	}
+
+	.how-it-works {
+		display:block !important;
+		margin:auto !important;
+		width:100px;
+		text-align:center;
+	}
+}
+
+.background-video {
+	position:fixed;
+	right:0;
+	bottom:0;
+	min-width:100%;
+	min-height:100%;
+	width:auto;
+	height:auto;
+	z-index:-100;
+}
+
+.video-overlay {
+	position:fixed;
+	right:0;
+	bottom:0;
+	min-width:100%;
+	min-height:100%;
+	width:auto;
+	height:auto;
+	background-color:rgba(255,255,255,0.15);
+	z-index:-99;
+}
+
+.home-content {
+	position:relative;
+	top:40%;
+	transform: translate(0,-50%);
+}
+
+.countdown-number {
+	font-size:5rem;
+	display:block;
+	text-align:center;
+}
+
+.countdown-title {
+	font-size:0.9rem;
+	display:block;
+	text-align:center;
+}
+
+.sign-up-button {
+	display:block !important;
+	width:200px !important;
+	margin:auto !important;
+	font-size:1.2rem !important;
+}

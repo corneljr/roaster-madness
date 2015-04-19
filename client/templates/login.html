@@ -1,0 +1,20 @@
+<template name='login'>
+  <a href="/">Roaster Madness</a>
+	<form id="application-login" class="login">
+    <h3>Login</h3>
+    <div class='ui form segment'>
+      <div class="field">
+        <label for="emailAddress">Email Address</label>
+        <input type="email" name="emailAddress" placeholder="Email Address">
+      </div> 
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Password">
+      </div> 
+      <div>
+        <input class='ui positive button' type="submit" value="Login">
+      </div>
+    </div>
+    <p>Don't have an account? <a href="{{pathFor 'signup'}}">Sign Up</a></p>
+  </form>
+</template>

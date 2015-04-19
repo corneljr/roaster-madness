@@ -1,0 +1,55 @@
+<template name='signup'>
+	<form id='application-signup' class='signup'>
+		<h3>Join the fun!</h3>
+		<div class='ui form segment'>
+			<div class='ui error form segment' id='error-messages' style='display:none;'>
+				<div class='ui error message'>
+					<div class='header'>Error</div>
+					<div id='error-message'></div>
+				</div>
+			</div>
+			<div class="ui horizontal divider">Personal Info</div>
+			<div class='field'>
+				<label for="fullname">Full name</label>
+				<input type="text" name='fullname' placeholder='Full name'>
+			</div>
+			<div class='field'>
+				<label for="email">Email</label>
+				<input type="email" name='email' placeholder='Email'>
+			</div>
+			<div class='field'>
+				<label for="password">Password</label>
+				<input type="password" name='password' placeholder='Password'>
+			</div>
+			<div class="ui horizontal divider">Shipping Info</div>
+			<div class='field'>
+				<label for="address">Address</label>
+				<input type="text" name='address' placeholder='Address'>
+			</div>
+			<div class='field'>
+				<label for="postalCode">Postal Code</label>
+				<input type="text" name='postalCode' placeholder='Postal Code'>
+			</div>
+			<div class="ui horizontal divider">Payment Info</div>
+			<div class='field'>
+				<label for="creditcard">Card Number</label>
+				<input type="text" name='creditcard' placeholder='Card Number'>
+			</div>
+			<div class='field'>
+				<label for="expMo">Expiry Month</label>
+				<input type="text" name='expMo' placeholder='Expiry Month'>
+			</div>
+			<div class='field'>
+				<label for="expYr">Expiry Year</label>
+				<input type="text" name='expYr' placeholder='Expiry Year'>
+			</div>
+			<div class='field'>
+				<label for="cvc">CVC</label>
+				<input type="text" name='cvc' placeholder='CVC'>
+			</div>
+			<div class='field'>
+				<input class='ui positive button' type="submit" value='Sign Up'>
+			</div>
+		</div>
+	</form>
+</template>

@@ -1,0 +1,25 @@
+<template name='votes'>
+	<p>What's up {{currentUser.profile.name}}, welcome to Roaster Madness!</p>
+	<p>First up, we need you to vote for your favourite roaster in the city.</p>
+	<div class='ui top attached segment'>
+		<div class='ui stackable four column grid'>
+			{{#each roasters}}
+				{{> roaster}}
+			{{/each}}
+		</div>
+	</div>
+</template>
+
+<template name='roaster'>
+	<div class='column'>
+		<div class="ui card">
+			<div class="image">
+			  <img src="images/roasters/pilot.png">
+			</div>
+			<div class="extra">
+			  <button class='vote ui teal button' disabled="{{#if voted}}true{{/if}}">{{#if voted}}Thanks for voting!{{else}}Vote!{{/if}}</button>
+			  <a class='ui button' href="{{website}}">website</a>
+			</div>
+		</div>
+	</div>
+</template>

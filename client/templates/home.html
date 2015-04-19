@@ -1,0 +1,43 @@
+<template name='home'>
+	<div class='home-container'>
+		{{#unless currentUser}}
+			<a class='log-in-link' href="{{pathFor 'login'}}">Log in</a>
+		{{/unless}}
+		<br>
+		<h1 class='ui center aligned header'>ROASTER MADNESS TORONTO</h1>
+		<h4 class='ui center aligned header'>A tournament style competition to determine the Toronto's favorite roaster.</h4>
+
+		<div class='home-content'>
+			<div class='ui eight column centered grid'>
+				<div class='column'>
+					<span class='countdown-title'>DAYS</span>
+					<span class='countdown-number'>{{countdown.days}}</span>
+				</div>
+				<div class='column'>
+					<span class='countdown-title'>HOURS</span>
+					<span class='countdown-number'>{{countdown.hours}}</span>
+				</div>
+				<div class='column'>
+					<span class='countdown-title'>MINUTES</span>
+					<span class='countdown-number'>{{countdown.minutes}}</span>
+				</div>
+				<div class='column'>
+					<span class='countdown-title'>SECONDS</span>
+					<span class='countdown-number'>{{countdown.seconds}}</span>
+				</div>
+			</div>
+			<br>
+			<h2 class='ui center aligned header'>So close, you can almost smell the grinds.</h2>
+			<br>
+			{{#unless currentUser}}
+				<br>
+				<a class='ui positive button sign-up-button' href="{{pathFor 'signup'}}">Sign me up!</a>
+				<br>
+				<a class='how-it-works' href="{{pathFor 'about'}}">How it works.</a>
+			{{/unless}}
+		</div>
+
+		<video autoplay loop class='background-video' src="background.mp4"></video>
+		<div class='video-overlay'></div>
+	</div>
+</template>

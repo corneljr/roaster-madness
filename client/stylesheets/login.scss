@@ -1,0 +1,14 @@
+#application-login {
+	width:60%;
+	margin:auto;
+	margin-top:10px;
+	margin-bottom: 10px;
+
+	h3,p,a {
+		text-align:center;		
+	}
+
+	@media (max-width: 768px) {
+		width:90%;
+	}
+}

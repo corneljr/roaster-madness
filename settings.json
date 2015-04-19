@@ -1,0 +1,15 @@
+{
+	 "public": {
+    "cost": 1500,
+    "stripe": {
+      "testPublishableKey": "pk_test_XOdIPg7Dv885XT0ueU0hdjDI",
+      "livePublishableKey": "pk_live_gTUVxkh1zjHNcx0SRwEhMSsr"
+    }
+  },
+  "private": {
+    "stripe": {
+      "testSecretKey": "sk_test_KOF1W7e1BFOiQvSAAFTQjnT0",
+      "liveSecretKey": "sk_live_eCidQl9JcAQRi7YD5GgUmMAX"
+    }
+  }
+}
