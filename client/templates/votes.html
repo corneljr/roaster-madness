@@ -1,25 +1,48 @@
 <template name='votes'>
 	<p>What's up {{currentUser.profile.name}}, welcome to Roaster Madness!</p>
 	<p>First up, we need you to vote for your favourite roaster in the city.</p>
-	<div class='ui top attached segment'>
-		<div class='ui stackable four column grid'>
-			{{#each roasters}}
-				{{> roaster}}
-			{{/each}}
+
+	<div class='initial-vote-container'>
+		<div class='ui top attached segment'>
+			{{#if voted}}
+				<div class='ui top attached label'>Current Voting Results</div>
+				<div class='ui ordered list'>
+					{{#each roasters}}
+						{{> results}}
+					{{/each}}
+				</div>
+			{{else}}
+				<div class='ui top attached label'>Who's your favourite roaster?</div>
+				<div class='ui stackable four column grid'>
+					{{#each roasters}}
+						{{> roaster}}
+					{{/each}}
+				</div>
+			{{/if}}
 		</div>
 	</div>
+
 </template>
 
 <template name='roaster'>
 	<div class='column'>
 		<div class="ui card">
-			<div class="image">
-			  <img src="images/roasters/pilot.png">
+			<div class="image card-image">
+			  <img src="{{image}}">
 			</div>
 			<div class="extra">
-			  <button class='vote ui teal button' disabled="{{#if voted}}true{{/if}}">{{#if voted}}Thanks for voting!{{else}}Vote!{{/if}}</button>
-			  <a class='ui button' href="{{website}}">website</a>
+			  <button style='width:100%;' class='vote ui teal button' disabled="{{#if voted}}true{{/if}}">{{#if voted}}Thanks for voting!{{else}}Vote!{{/if}}</button>
 			</div>
 		</div>
 	</div>
+</template>
+
+<template name='results'>
+  <div class="item">
+		<img class="ui avatar image" src="{{image}}">
+		<div class="content">
+			<div class="header">{{name}}</div>
+			{{votes}} votes
+		</div>
+  </div>
 </template>

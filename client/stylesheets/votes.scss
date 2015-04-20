@@ -1,0 +1,18 @@
+.initial-vote-container {
+	width:70%;
+	margin:auto;
+	margin-top:10px;
+	margin-bottom: 10px;
+
+	@media (max-width: 768px) {
+		width:90%;
+	}
+}
+
+.card-image {
+	height:150px !important;
+	overflow:hidden;
+	img {
+		display:block;
+	}
+}
